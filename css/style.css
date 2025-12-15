@@ -21,7 +21,6 @@ body {
 }
 
 header {
-  background-color: #2e323f;
   text-align: center;
 }
 
@@ -30,13 +29,37 @@ header {
   max-width: 1200px;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
 }
 
-.container {
+.toggle--relative {
   position: relative;
+}
+
+.align--center {
   align-items: center;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+.text--white {
+  color: #ffffff;
+}
+
+.text--light-brown {
+  color: #a59678;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 /* primary navigation */
@@ -45,9 +68,8 @@ header {
   font-size: 1.125rem;
   font-weight: 700;
   margin: 0 auto;
-  padding: 2em 0;
-  width: 80%;
-  position: relative;
+  padding: 1.5em 0;
+  background-color: #2e323f;
 }
 
 .nav__logo,
@@ -57,7 +79,6 @@ header {
 
 .nav__logo {
   flex: 1;
-  justify-content: center;
 }
 
 .nav__logo__img {
@@ -81,6 +102,7 @@ header {
   color: #ffffff;
   text-decoration: none;
   position: relative;
+  text-transform: uppercase;
 }
 
 .nav__link:focus-visible {
@@ -109,7 +131,14 @@ header {
   border-radius: 6.25rem;
   padding: 0.5em 2em;
   display: inline-block;
+  align-self: center;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  font-size: clamp(0.9rem, calc(2vw - 0.25rem), 1.5rem);
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 .cta:hover {
@@ -147,4 +176,30 @@ header {
 
 .hamburger:last-child {
   margin-bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #3b4050;
+}
+
+.hero__title {
+  text-align: center;
+  padding: 5rem 0;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, calc(10vw - 0.5rem), 5.625rem);
+}
+
+.hero__content {
+  padding-bottom: 3rem;
+  flex-direction: column;
+}
+
+.hero__text {
+  margin-bottom: 2rem;
+  font-size: clamp(0.9rem, calc(2vw - 0.25rem), 1.5rem);
+}
+
+img {
+  display: none;
 }

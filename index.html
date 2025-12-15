@@ -17,55 +17,67 @@
     <header>
       <div class="wrapper">
         <nav class="nav nav--primary" aria-label="primary nav">
-          <input class="toggle__active" id="nav-active" checked type="checkbox">
+          <div class="toggle--relative container">
+            <input class="toggle__active" id="nav-active" type="checkbox">
 
-          <div class="container flex">
-            <ul class="nav__logo flex">
+            <div class="align--center container flex">
+              <ul class="nav__logo justify--center flex">
+                <li class="nav__item">
+                  <img class="nav__logo__img" alt="CRL" src="logo/logo.svg">
+                </li>
+              </ul>
+
+              <label class="toggle" for="nav-active">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+              </label>
+            </div>
+
+            <ul class="nav__menu">
+              <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
               <li class="nav__item">
-                <img class="nav__logo__img" alt="CRL" src="logo/logo.svg">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Sign In</a>
+              </li>
+              <li class="nav__item cta">
+                <a class="nav__link nav__link--without-underline" href="#"
+                  >Sign Up</a
+                >
               </li>
             </ul>
-
-            <label class="toggle" for="nav-active">
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-            </label>
           </div>
-
-          <ul class="nav__menu">
-            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Sign In</a></li>
-            <li class="nav__item cta">
-              <a class="nav__link nav__link--without-underline" href="#"
-                >Sign Up</a
-              >
-            </li>
-          </ul>
         </nav>
       </div>
     </header>
 
     <main>
       <div class="wrapper">
-        <section class="hero">
-          <h1 class="hero__title">
-            Responsive Layout Don&#8217;t Have to be a Struggle
-          </h1>
+        <section class="hero text--white">
+          <div class="container">
+            <h1 class="hero__title">
+              Responsive Layout
+              <span class="text--light-brown"
+                >Don&#8217;t Have to be
+                <span class="nowrap">a Struggle</span></span
+              >
+            </h1>
 
-          <div class="hero__content">
-            <p class="hero__text">
-              3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="hero__content flex">
+              <p class="hero__text">
+                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
 
-            <a
-              class="cta"
-              href="https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts"
-              >I want to learn</a
-            >
+              <a
+                class="cta"
+                href="https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts"
+                >I want to learn</a
+              >
+            </div>
           </div>
         </section>
 

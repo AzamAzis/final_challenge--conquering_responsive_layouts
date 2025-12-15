@@ -147,8 +147,7 @@ header {
 
 /* Toggle */
 .toggle {
-  background-color: rgb(35, 48, 61);
-  padding: 1em;
+  padding: 0.5em;
   width: fit-content;
   cursor: pointer;
   display: inline-block;
@@ -169,9 +168,9 @@ header {
   background-color: #ffffff;
   content: "";
   display: block;
-  height: 0.2rem;
+  height: 0.15rem;
   margin-bottom: 0.375rem;
-  width: 1.75rem;
+  width: 1.5rem;
 }
 
 .hamburger:last-child {
@@ -207,7 +206,7 @@ img {
 
 /* Benefit Content section */
 .benefit-content {
-  background-color: #6f737f;
+  background-color: #d3d8e7;
   padding: 3rem 0;
 }
 

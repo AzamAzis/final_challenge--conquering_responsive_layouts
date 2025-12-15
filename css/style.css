@@ -187,7 +187,8 @@ header {
   text-align: center;
   padding: 5rem 0;
   font-family: "Oswald", sans-serif;
-  font-size: clamp(2rem, calc(10vw - 0.5rem), 5.625rem);
+  font-weight: 700;
+  font-size: clamp(2rem, calc(7vw - 0.5rem), 5.625rem);
 }
 
 .hero__content {
@@ -202,4 +203,25 @@ header {
 
 img {
   display: none;
+}
+
+/* Benefit Content section */
+.benefit-content {
+  background-color: #6f737f;
+  padding: 3rem 0;
+}
+
+.content:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.25rem, calc(2.25vw - 0.125rem), 1.875rem);
+}
+
+.content__text {
+  font-size: clamp(0.75rem, calc(1.417vw - 0.125rem), 1.125rem);
 }

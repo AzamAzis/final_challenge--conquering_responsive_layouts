@@ -300,24 +300,4 @@ body {
   .content:not(:last-child) {
     margin-bottom: 0;
   }
-
-  .nav__logo {
-    justify-content: flex-start;
-  }
-
-  .toggle {
-    display: none;
-  }
-
-  .nav__menu {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    gap: 3em;
-  }
-
-  .nav__item {
-    margin-top: 0;
-    white-space: nowrap;
-  }
 }

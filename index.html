@@ -14,7 +14,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="text--center">
       <div class="wrapper">
         <nav class="nav nav--primary bg--light-black" aria-label="primary nav">
           <div class="toggle--relative container">
@@ -23,14 +23,18 @@
             <div class="align--center container flex">
               <ul class="nav__logo justify--center flex">
                 <li class="nav__item">
-                  <img class="nav__logo__img" alt="CRL" src="logo/logo.svg">
+                  <img
+                    class="nav__logo__img block"
+                    alt="CRL"
+                    src="logo/logo.svg"
+                  >
                 </li>
               </ul>
 
               <label class="toggle" for="nav-active">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
+                <span class="hamburger block"></span>
+                <span class="hamburger block"></span>
+                <span class="hamburger block"></span>
               </label>
             </div>
 
@@ -57,8 +61,8 @@
     <main>
       <div class="wrapper">
         <section class="hero text--white">
-          <div class="container">
-            <h1 class="hero__title">
+          <div class="inner container">
+            <h1 class="hero__title text--center">
               Responsive Layout
               <span class="text--light-brown"
                 >Don&#8217;t Have to be
@@ -81,7 +85,7 @@
           </div>
         </section>
 
-        <section class="benefit-content">
+        <section class="benefit-content inner">
           <div class="container">
             <div class="content">
               <h2 class="title text--light-brown">Mobile-first</h2>
@@ -115,7 +119,7 @@
           </div>
         </section>
 
-        <section class="explanation-content">
+        <section class="explanation-content inner">
           <div class="container">
             <h2 class="title text--light-brown explanation__title">
               It doesn&#8217;t have to be <span class="nowrap">so hard</span>
@@ -131,7 +135,7 @@
               </p>
 
               <img
-                class="content__img"
+                class="content__img block"
                 alt="hand drawn document"
                 height="400"
                 src="img/the-image.jpg"
@@ -147,7 +151,7 @@
               </p>
             </div>
 
-            <div class="sidebar text--white">
+            <div class="sidebar text--white text--center">
               <div class="content bg--light-black sidebar__content">
                 <h2 class="title">Break it down</h2>
 
@@ -181,55 +185,92 @@
     </main>
 
     <footer>
-      <div class="wrapper">
-        <h2 class="title">Just scratching the surface</h2>
+      <div class="wrapper bg--light-black text--white">
+        <div class="footer inner container">
+          <h2 class="title footer__title text--center">
+            Just scratching <span class="nowrap">the surface</span>
+          </h2>
 
-        <div class="content">
-          <h3 class="title">About our company</h3>
+          <div class="content">
+            <h3 class="title text--light-brown footer__subtitle">
+              About our company
+            </h3>
 
-          <p class="content__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. 9
-          </p>
-        </div>
+            <p class="content__text text--gray footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
 
-        <div class="content">
-          <h3 class="title">Getting around</h3>
+          <div class="content">
+            <h3 class="title text--light-brown">Getting around</h3>
 
-          <nav class="nav" aria-label="secondary nav">
-            <ul class="nav__menu">
-              <li class="nav__item">Home</li>
-              <li class="nav__item">About</li>
-              <li class="nav__item">Contact</li>
-            </ul>
-          </nav>
-        </div>
+            <nav
+              class="nav nav__secondary footer__text"
+              aria-label="secondary nav"
+            >
+              <ul class="nav__menu block">
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">About</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-        <div class="content">
-          <h3 class="title">Other things</h3>
+          <div class="content">
+            <h3 class="title text--light-brown">Other things</h3>
 
-          <nav class="nav" aria-label="secondary nav">
-            <ul class="nav__menu">
-              <li class="nav__item">Lorem ipsum</li>
-              <li class="nav__item">dolor</li>
-              <li class="nav__item">sit amet</li>
-              <li class="nav__item">consectetur</li>
-            </ul>
-          </nav>
-        </div>
+            <nav
+              class="nav nav__secondary footer__text"
+              aria-label="secondary nav"
+            >
+              <ul class="nav__menu block">
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">Lorem ipsum</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">dolor</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">sit amet</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">consectetur</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-        <div class="content">
-          <h3 class="title">And more</h3>
+          <div class="content">
+            <h3 class="title text--light-brown">And more</h3>
 
-          <nav class="nav" aria-label="secondary nav">
-            <ul class="nav__menu">
-              <li class="nav__item">Lorem ipsum</li>
-              <li class="nav__item">dolor</li>
-              <li class="nav__item">sit amet</li>
-              <li class="nav__item">consectetur</li>
-            </ul>
-          </nav>
+            <nav
+              class="nav nav__secondary nav__secondary--no-padding-bottom footer__text"
+              aria-label="secondary nav"
+            >
+              <ul class="nav__menu block">
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">Lorem ipsum</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">dolor</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">sit amet</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link text--gray" href="#">consectetur</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>

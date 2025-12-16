@@ -267,7 +267,6 @@ body {
 
 .nav__secondary {
   padding-top: 0;
-  font-size: clamp();
 }
 
 .nav__secondary--no-padding-bottom {
@@ -277,4 +276,38 @@ body {
 .footer__text {
   font-size: clamp(0.875rem, calc(1.5vw - 0.125rem), 1rem);
   font-weight: 400;
+}
+
+.footer .nav__link {
+  text-transform: none;
+}
+
+.footer .nav__link::after {
+  transform-origin: bottom left;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav--primary {
+    display: flex;
+  }
+
+  .nav__logo {
+    justify-content: flex-start;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    gap: 3em;
+  }
+
+  .nav__item {
+    margin-top: 0;
+    white-space: nowrap;
+  }
 }

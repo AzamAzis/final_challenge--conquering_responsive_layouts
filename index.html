@@ -17,7 +17,7 @@
     <header class="text--center">
       <div class="wrapper">
         <nav class="nav bg--light-black" aria-label="primary nav">
-          <div class="toggle--relative nav--primary container">
+          <div class="toggle--relative nav-primary container">
             <input class="toggle__active" id="nav-active" type="checkbox">
 
             <div class="align--center container flex">
@@ -38,17 +38,23 @@
               </label>
             </div>
 
-            <ul class="nav__menu">
-              <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Contact</a>
+            <ul class="nav__menu nav-primary__menu">
+              <li class="nav__item nav-primary__item">
+                <a class="nav__link nav-primary__link" href="#">Home</a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Sign In</a>
+              <li class="nav__item nav-primary__item">
+                <a class="nav__link nav-primary__link" href="#">About</a>
               </li>
-              <li class="nav__item cta">
-                <a class="nav__link nav__link--without-underline" href="#"
+              <li class="nav__item nav-primary__item">
+                <a class="nav__link nav-primary__link" href="#">Contact</a>
+              </li>
+              <li class="nav__item nav-primary__item">
+                <a class="nav__link nav-primary__link" href="#">Sign In</a>
+              </li>
+              <li class="nav__item cta nav-primary__item">
+                <a
+                  class="nav__link nav__link--without-underline nav-primary__link"
+                  href="#"
                   >Sign Up</a
                 >
               </li>
@@ -61,7 +67,7 @@
     <main>
       <div class="wrapper">
         <section class="hero text--white">
-          <div class="inner container">
+          <div class="inner hero-container container">
             <h1 class="hero__title text--center">
               Responsive Layout
               <span class="text--light-brown"
@@ -72,8 +78,8 @@
 
             <div class="hero__content flex">
               <p class="hero__text">
-                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
 
               <a
@@ -86,8 +92,8 @@
         </section>
 
         <section class="benefit-content inner">
-          <div class="container">
-            <div class="content">
+          <div class="benefit-content__container container">
+            <div class="content benefit-content__text">
               <h2 class="title text--light-brown">Mobile-first</h2>
 
               <p class="content__text">
@@ -97,7 +103,7 @@
               </p>
             </div>
 
-            <div class="content">
+            <div class="content benefit-content__text">
               <h2 class="title text--light-brown">Efficient</h2>
 
               <p class="content__text">
@@ -107,7 +113,7 @@
               </p>
             </div>
 
-            <div class="content">
+            <div class="content benefit-content__text">
               <h2 class="title text--light-brown">Done right</h2>
 
               <p class="content__text">
@@ -120,35 +126,37 @@
         </section>
 
         <section class="explanation-content inner">
-          <div class="container">
-            <h2 class="title text--light-brown explanation__title">
-              It doesn&#8217;t have to be <span class="nowrap">so hard</span>
-            </h2>
+          <div class="explanation-content__container container">
+            <div class="explanation-content__main">
+              <h2 class="title text--light-brown explanation__title">
+                It doesn&#8217;t have to be <span class="nowrap">so hard</span>
+              </h2>
 
-            <div class="content">
-              <p class="explanation__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
+              <div class="content">
+                <p class="explanation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
 
-              <img
-                class="content__img block"
-                alt="hand drawn document"
-                height="400"
-                src="img/the-image.jpg"
-                width="1000"
-              >
+                <img
+                  class="content__img block"
+                  alt="hand drawn document"
+                  height="400"
+                  src="img/the-image.jpg"
+                  width="1000"
+                >
 
-              <p class="explanation__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
+                <p class="explanation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+              </div>
             </div>
 
             <div class="sidebar text--white text--center">
@@ -191,85 +199,91 @@
             Just scratching <span class="nowrap">the surface</span>
           </h2>
 
-          <div class="content">
-            <h3 class="title text--light-brown footer__subtitle">
-              About our company
-            </h3>
+          <div class="footer__content">
+            <div class="content footer--container-wide">
+              <h3 class="title text--light-brown footer__subtitle">
+                About our company
+              </h3>
 
-            <p class="content__text text--gray footer__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
+              <p class="content__text text--gray footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
 
-          <div class="content">
-            <h3 class="title text--light-brown">Getting around</h3>
+            <div class="content footer--container">
+              <h3 class="title text--light-brown footer__subtitle">
+                Getting around
+              </h3>
 
-            <nav
-              class="nav nav__secondary footer__text"
-              aria-label="secondary nav"
-            >
-              <ul class="nav__menu block">
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">Home</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">About</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <nav
+                class="nav nav__secondary footer__text"
+                aria-label="secondary nav"
+              >
+                <ul class="nav__menu block">
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-          <div class="content">
-            <h3 class="title text--light-brown">Other things</h3>
+            <div class="content footer--container">
+              <h3 class="title text--light-brown footer__subtitle">
+                Other things
+              </h3>
 
-            <nav
-              class="nav nav__secondary footer__text"
-              aria-label="secondary nav"
-            >
-              <ul class="nav__menu block">
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">Lorem ipsum</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">dolor</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">sit amet</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">consectetur</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+              <nav
+                class="nav nav__secondary footer__text"
+                aria-label="secondary nav"
+              >
+                <ul class="nav__menu block">
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">Lorem ipsum</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">dolor</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">sit amet</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">consectetur</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-          <div class="content">
-            <h3 class="title text--light-brown">And more</h3>
+            <div class="content footer--container">
+              <h3 class="title text--light-brown footer__subtitle">And more</h3>
 
-            <nav
-              class="nav nav__secondary nav__secondary--no-padding-bottom footer__text"
-              aria-label="secondary nav"
-            >
-              <ul class="nav__menu block">
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">Lorem ipsum</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">dolor</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">sit amet</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link text--gray" href="#">consectetur</a>
-                </li>
-              </ul>
-            </nav>
+              <nav
+                class="nav nav__secondary nav__secondary--no-padding-bottom footer__text"
+                aria-label="secondary nav"
+              >
+                <ul class="nav__menu block">
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">Lorem ipsum</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">dolor</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">sit amet</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link text--gray" href="#">consectetur</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
